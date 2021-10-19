@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro de alumno</title>
+	<meta charset="utf-8">
+	<meta name="description" content="pagina de diseño grafico XYZ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="author" content="Maria Isabel">
+	<style >
+		
+		
+		header{
+			padding: 10px;
+			background-color: #000000;
+			color:#fff;
+			height: 200px;
+			background-image: url("./assets/img/banner.jpg");
+			background-repeat: repeat;
+			background-size: auto;
+
+		}
+		#titulo{
+			margin-top: 130px;
+			margin-left: 10px;
+			font-size:30px;
+		}
+		nav{
+			background-color: #000000;
+			border-bottom: 10px solid #8649A9;
+		}
+		#lista a{
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: bold;
+			color:#fff;
+		}
+
+		ul li{
+			display: inline-block;
+			list-style-type: none;
+			padding:30px 40px 30px 40px ;
+			transition: .5s;
+			-webkit-transition:.5s;
+			-moz-transition:.5s;
+		}
+		ul li:hover{
+			background-color: #8649A9;
+			border-bottom: 10px solid white;
+
+			padding: 30px 40px 20px 40px;
+		}
+		
+
+		
+			
+		
+		.tituloart{
+			margin-top: 20px;
+			font-size: 18px;
+		}
+		
+
+		footer{
+
+			color:#fff;
+			background-color: #8649A9;
+			background-position: bottom;
+			text-align: center;
+			font-size: 14px;
+			height: 100px;
+			padding-top: 70px;
+		}
+		hr{
+			border:0;
+			height: 1px;
+			background-image: linear-gradient(to rigth,rgba(255,255,255,0),rgba(255,255,255,0,75),rgba(255,255,255,0));
+
+		}
+
+
+	
+		
+		*{
+  		margin: 0 auto;
+  	}
+  	body{
+  		font-size: 15px;
+  		margin-top: 0%;
+  		margin-bottom: 0%;
+  		
+  	}
+  	
+  	
+  	.jumbotron{
+  		margin-top: 2%;
+  		background-color: #B469E8;
+  		opacity: 0.6;
+  		
+  		-webkit-border-radius: 20px 0 20px 0;
+border-radius: 20px 0 20px 0;
+-webkit-box-shadow: 20px 20px 20px 5px #EFC4FF;
+box-shadow: 20px 20px 20px 5px #EFC4FF;
+
+  	}
+  	label,h3{
+  		color: white;
+  	}
+  	
+
+
+
+
+		
+
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<h1 id="titulo" class="tituloart">Academia de baile online</h1>
+		
+	</header>
+	<nav id="navbar">
+		<ul id="lista">
+			<li><a href="file:///C:/Users/Usuario/Desktop/mi%20pagina/index.html">Quienes somos</a></li>
+			<li><a href="#">Registro</a></li>
+			<li><a href="file:///C:/Users/Usuario/Desktop/mi%20pagina2/tabla.html">Cursos</a></li>
+
+		</ul>
+	</nav>
+
+	<section id="seccion">
+		<div class="container">
+	<div class="jumbotron">
+	<center><h3>REGISTRO DE USUARIO</h3></center>
+  
+	<br>
+    <label>Digite el nombre del alumno*</label>
+	<input class="form-control" type="text" placeholder="Entrada de datos" maxlength="10"
+	value="nombre" required>
+	<br>
+	<label>Digite el apellido del alumno*</label>
+	<input class="form-control" type="text" placeholder="Entrada de datos" maxlength="10"
+	value="Apellido" required>
+	
+	<br>
+	<label>Edad del alumno</label>
+	<input class="form-control" type="number" placeholder="Entrada de datos" min="1" max="20"
+	value="0">
+	<br>
+	<label>Digite tu fecha de Nacimiento del alumno</label>
+	<input class="form-control" type="date" value="2020-09-09" min="1900-01-01" >
+	<br>
+	<label>Digite la tarjeta de identidad o cedula del alumno*</label>
+	<input class="form-control" type="number" placeholder="Entrada de datos" maxlength="10"
+	value="0" required>
+	
+	<br>
+	<label>Nivel de estudio</label>
+	<select class="form-control">
+		<option>Seleccion el nivel de estudio</option>
+		<option value="primaria">primaria</option>
+		<option value="secundaria">secundaria</option>
+		<option value="tecnico">tecnico</option>
+		<option value="tecnologo">Tecnologo</option>
+		<option value="profesional">Profesional</option>
+		<option value="postgrado">Postgrado</option>
+	</select>	
+	<br>
+	<label>Comentarios ¿por que te gusta bailar?</label>
+    <textarea  class="form-control" rows="10" ></textarea>
+    <br>
+    <label>Sexo</label>
+    <br>
+    <input type="radio" name="sexo" checked>Masculino
+    <input type="radio" name="sexo">Femenino
+    <br>
+    <label>que prefieres?</label>
+    <br>
+    <input type="radio" name="pc" checked>ballet 
+    <input type="radio" name="pc"> hip hop 
+    <br>
+    <center><button class="btn btn-success">Enviar</button></center>
+</div>
+</div>
+</section>
+	 <footer>
+		 	
+	<p>&copy 2020 Cartagena de Indias Derechos Reservados de Autor
+		 	</p>
+	   
+
+	<img src="https://img.icons8.com/ios/50/000000/facebook--v2.png"/>
+    <img src="https://img.icons8.com/ios/50/000000/instagram-new--v3.png"/>
+    <img src="https://img.icons8.com/ios/50/000000/twitter--v2.png"/>
+
+		 	
+		 </footer>
+
+
+
+</body>
+</html>
